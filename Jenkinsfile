@@ -8,10 +8,8 @@ pipeline {
             }
 
             steps {
-                catchError(buildResult: 'SUCCESS', stageResult: 'ABORTED') { 
-                    echo "Started stage A"
-                    sleep(time: 5, unit: "SECONDS")
-                }
+                echo "Started stage A"
+                sleep(time: 5, unit: "SECONDS")
             }
         }
 
